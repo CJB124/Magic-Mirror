@@ -1,0 +1,82 @@
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#weather {
+  margin: 50pt;
+  position: absolute;
+}
+
+#weather #city {
+  font-size: 38pt;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  width: 75%;
+  font-weight: lighter;
+  font-family: "Segoe UI";
+  color: #FFFFFF;
+  display: block;
+}
+
+#weather #city:focus {
+  outline: none;
+}
+
+#weather #icon {
+  vertical-align: middle;
+  -webkit-filter: invert(100%);
+  margin-right: 15pt;
+  width: 125px;
+  height: 125px;
+}
+
+#weather #temp {
+  vertical-align: middle;
+  font-size: 72pt;
+}
+
+#weather #desc {
+  font-size: 24pt;
+}
+
+#date {
+  margin-top: 50pt;
+  text-align: center;
+  width: 100%;
+  font-size: 38pt;
+  position: absolute;
+  z-index: -1;
+}
+
+#date #time {
+  display: block;
+}
+
+#date #day {
+  font-size: 24pt;
+  display: block;
+}
+
+#message {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 65%;
+  margin-top: -36pt;
+  text-align: center;
+}
+
+#message #text {
+  font-size: 72pt;
+}
